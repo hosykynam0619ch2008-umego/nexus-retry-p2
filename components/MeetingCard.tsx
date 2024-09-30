@@ -54,9 +54,7 @@ const MeetingCard = ({
               style={{ top: 0, left: index * 28 }}
             />
           ))}
-          <div className="flex-center absolute left-[136px] size-10 rounded-full border-[5px] border-dark-3 bg-dark-4">
-            +5
-          </div>
+
         </div>
         {!isPreviousMeeting && (
           <div className="flex gap-2">
@@ -70,7 +68,7 @@ const MeetingCard = ({
               onClick={() => {
                 navigator.clipboard.writeText(link);
                 toast({
-                  title: "Link Copied",
+                  title: "Đã sao chép liên kết",
                 });
               }}
               className="bg-dark-4 px-6"
@@ -81,7 +79,7 @@ const MeetingCard = ({
                 width={20}
                 height={20}
               />
-              &nbsp; Copy Link
+              &nbsp; Sao chép liên kết
             </Button>
           </div>
         )}
